@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #292727;
+}
+
+.navbar{
+    width: 100%;
+}
+#navbarSupportedContent{
+    right: 20rem;
+}
+.head{
+    margin-top: 7rem;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.textArea{
+    margin-top: 4rem;
+    position: relative;
+    left: 15%;
+    width: 70%;
+    display: flex;
+    height: 300px;
+}
+.form{
+    width: 100%;
+}
+.form textarea{
+    padding: 20px;
+    box-shadow: rgb(73, 73, 143) 0px 30px 60px -12px inset, rgb(185, 221, 57) 0px 18px 36px -18px inset;
+}
+.form textarea:hover{
+    box-shadow: rgb(73, 73, 143) 0px 30px 60px -12px inset, rgb(185, 221, 57) 0px 18px 36px -18px inset;
+}
