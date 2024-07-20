@@ -31,6 +31,7 @@ body{
     width: 100%;
 }
 .form textarea{
+    font-weight: bold;
     padding: 20px;
     box-shadow: rgb(73, 73, 143) 0px 30px 60px -12px inset, rgb(185, 221, 57) 0px 18px 36px -18px inset;
 }
