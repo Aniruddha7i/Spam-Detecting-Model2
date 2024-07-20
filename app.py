@@ -4,7 +4,7 @@ import pickle
 import string
 
 app: Flask = Flask(__name__, template_folder='template', static_folder='static')
-
+nltk.download('stopwords')
 stopWords = nltk.corpus.stopwords.words('english')
 
 
