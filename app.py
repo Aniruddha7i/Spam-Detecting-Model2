@@ -55,7 +55,7 @@ with open('model.pkl', 'rb') as f1:
 
 @app.route("/", methods=['GET'])
 def lode_home_page():
-    return render_template('home.html', head='Check Your SMS Spam or Not')
+    return render_template('home.html', head='Check Your SMS Spam or Not',root_home=True)
 
 
 @app.route("/submit", methods=['POST'])
@@ -66,10 +66,12 @@ def result_page():
     pdt = model.predict(vectorized)
     if pdt == 0:
         head_mess = 'This is not a Spam'
+        root_home_=True
     else:
         head_mess = 'Spam!!'
-    return render_template('home.html', head=head_mess)
+        root_home_=False
+    return render_template('home.html', head=head_mess,root_home=root_home_)
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0',debug=True)

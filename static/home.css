@@ -12,13 +12,18 @@ body{
 #navbarSupportedContent{
     right: 20rem;
 }
-.head{
+.head1{
     margin-top: 7rem;
     display: flex;
     color: white;
     justify-content: center;
 }
-
+.head2{
+    margin-top: 7rem;
+    display: flex;
+    color: rgb(255, 52, 52);
+    justify-content: center;
+}
 .textArea{
     margin-top: 4rem;
     position: relative;
